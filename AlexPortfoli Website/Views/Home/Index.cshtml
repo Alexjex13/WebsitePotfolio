@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div style="width:100%;height:100%">
+    <div style="float:left;background-image: linear-gradient(#2d4cd6, #9dabed);width:100%;height:25%;vertical-align:middle">
+        <div style="margin-top:100px">
+            <div style="float:left;width:10%;padding-left:10px">
+                <div class="sidebarCollapse" style="background-color: white; border-radius: 50%; height: 50px; width: 50px;">
+
+                </div>
+            </div>
+            <div style="float: left;width:90%">
+                <strong @*class="sidebarCollapse"*@ style="color:white;font-size:xx-large">
+                    ALEXANDER JEX
+                </strong>
+            </div>
+        </div>
+    </div>
+    <div style="width:50%;height:70%;float:left;background-color:#ebebeb;text-align:center;align-items:center">
+        <div style="margin-top:30px">
+            <strong style="color:black;font-size:x-large;">
+                My Skills
+            </strong>
+        </div>
+        <div style="width:50%;float:left">
+            <p></p>
+            <a onclick="location.href='@Url.Action("htmlpage")'">
+                <div class="homeIconHolders">
+                    <p style="color:black;font-size:30px"><strong>HTML</strong></p>
+                    <img src="~/Content/Images/Html5Image.png" height="100" width="120" />
+                    <hr>
+                </div>
+            </a>
+            <p></p>
+            <a onclick="location.href='@Url.Action("cpage")'">
+                <div class="homeIconHolders">
+                    <p style="color:black;font-size:30px"><strong>C#</strong></p>
+                    <img src="~/Content/Images/cimage.png" height="100" width="100" />
+                    <hr>
+                </div>
+                <p></p>
+            </a>
+            <a onclick="location.href='@Url.Action("javascriptPage")'">
+                <div class="homeIconHolders">
+                    <p style="color:black;font-size:30px"><strong>Javascript</strong></p>
+                    <img src="~/Content/Images/javascriptimage.jpg" height="100" width="120" />
+                    <hr>
+                </div>
+            </a>
+        </div>
+        <div style="width:50%;float:left">
+            <p></p>
+            <a onclick="location.href='@Url.Action("SqlPage")'">
+                <div class="homeIconHolders">
+                    <p style="color:black;font-size:30px"><strong>SQL</strong></p>
+                    <img src="~/Content/Images/sqlimage.png" height="100" width="200" />
+                    <hr>
+                </div>
+            </a>
+            <p></p>
+            <a onclick="location.href='@Url.Action("NetCorePage")'">
+                <div class="homeIconHolders">
+                    <p style="color:black;font-size:30px"><strong>.Net Core</strong></p>
+                    <img src="~/Content/Images/.netimage.png" height="100" width="160" />
+                    <hr>
+                </div>
+            </a>
+            <p></p>
+            <a onclick="location.href='@Url.Action("AzurePage")'">
+                <div class="homeIconHolders">
+                    <p style="color:black;font-size:30px"><strong>Azure Development</strong></p>
+                    <img src="~/Content/Images/azure image.png" height="100" width="100" />
+                    <hr>
+                </div>
+            </a>                
+        </div>    
+    </div>
+    <div style="width: 50%;height:70%;float: left;background-color:#ebebeb;text-align:center">
+        <div style="margin-top:30px">
+            <strong style="color:black;font-size:x-large;">
+                My Products
+            </strong>
+            <p></p>
+            <a onclick="location.href='@Url.Action("CustomWebsites")'">
+                <div class="homeIconHolders">
+                    <p style="color:black;font-size:30px"><strong>Custom Websites</strong></p>
+                    <img src="~/Content/Images/websiteImage.png" height="100" width="100" />
+                    <hr>
+                </div>
+            </a>
+            <p></p>
+            <a onclick="location.href='@Url.Action("CustomCmsDevelopment")'">
+                <div class="homeIconHolders">
+                    <p style="color:black;font-size:30px"><strong>Custom CMS Development</strong></p>
+                    <img src="~/Content/Images/cms image.png" height="100" width="100" />
+                    <hr>
+                </div>
+                <p></p>
+            </a>
+            <a onclick="location.href='@Url.Action("MobileAppDevelopment")'">
+                <div class="homeIconHolders">
+                    <p style="color:black;font-size:30px"><strong>Mobile App Development</strong></p>
+                    <img src="~/Content/Images/appimage.png" height="100" width="100" />
+                    <hr>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div style="background-image: linear-gradient(#2d4cd6, #8294e8); color: white; text-align: center; font-size: large">
+        <p style="color:white">&copy; @DateTime.Now.Year - Created By Alexander Jex</p>
+        <p>
+            <a href="tel:+447522777211" style="color:white">
+                Call Me!
+            </a>
+        </p>
+    </div>
+</div>        
